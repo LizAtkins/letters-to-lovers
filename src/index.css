@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Lato', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-coquette-background text-coquette-text;
+    font-family: 'Lato', system-ui, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-pink-700 text-white px-8 py-3 rounded-md font-medium transition-all duration-200 hover:bg-pink-600;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent text-pink-700 px-8 py-3 rounded-md font-medium transition-all duration-200 hover:bg-pink-50 border border-pink-700;
+  }
+  
+  .card {
+    @apply bg-coquette-card-bg border border-coquette-card-border rounded-xl p-6 shadow-sm transition-all duration-200 hover:shadow-md;
+  }
+  
+  .nav-link {
+    @apply text-coquette-text-light hover:text-coquette-text transition-colors duration-200 font-medium;
+  }
+  
+  .nav-link-active {
+    @apply text-coquette-text font-semibold;
+  }
+}
