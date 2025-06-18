@@ -149,13 +149,6 @@ const Navigation = () => {
             <div className="space-y-2">
               <Link
                 to="/"
-                className="block w-full text-center font-handwriting text-2xl text-coquette-text mb-4"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Letters to Lovers
-              </Link>
-              <Link
-                to="/"
                 className={`block px-4 py-2 text-sm nav-link ${
                   isActive('/') ? 'nav-link-active' : ''
                 }`}
