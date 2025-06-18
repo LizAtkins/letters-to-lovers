@@ -79,7 +79,6 @@ const Category = () => {
               key={poem.id}
               title={poem.title}
               excerpt={poem.excerpt}
-              category={category?.title || ''}
               onClick={() => handlePoemClick(poem.id)}
             />
             

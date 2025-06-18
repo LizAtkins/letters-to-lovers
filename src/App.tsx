@@ -7,7 +7,7 @@ import Contact from './pages/Contact/Contact';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/letters-to-lovers">
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
