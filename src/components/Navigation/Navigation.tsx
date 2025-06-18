@@ -44,7 +44,7 @@ const Navigation = () => {
           {/* Mobile Site Title */}
           <Link
             to="/"
-            className="md:hidden absolute left-1/2 -translate-x-1/2 font-handwriting text-2xl text-coquette-text"
+            className="md:hidden absolute left-1/2 -translate-x-1/2 font-handwriting text-lg text-coquette-text whitespace-nowrap"
             style={{ zIndex: 10 }}
             tabIndex={0}
             aria-label="Go to home page"
