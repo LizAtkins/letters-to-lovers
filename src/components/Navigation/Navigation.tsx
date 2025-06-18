@@ -40,7 +40,18 @@ const Navigation = () => {
   return (
     <nav className="bg-coquette-card-bg border-b border-coquette-card-border sticky top-0 z-50">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-center h-16">
+        <div className="flex items-center justify-center h-16 relative">
+          {/* Mobile Site Title */}
+          <Link
+            to="/"
+            className="md:hidden absolute left-1/2 -translate-x-1/2 font-handwriting text-2xl text-coquette-text"
+            style={{ zIndex: 10 }}
+            tabIndex={0}
+            aria-label="Go to home page"
+          >
+            Letters to Lovers
+          </Link>
+
           {/* Main Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {/* Home Link */}
@@ -136,6 +147,13 @@ const Navigation = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-coquette-card-border">
             <div className="space-y-2">
+              <Link
+                to="/"
+                className="block w-full text-center font-handwriting text-2xl text-coquette-text mb-4"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Letters to Lovers
+              </Link>
               <Link
                 to="/"
                 className={`block px-4 py-2 text-sm nav-link ${

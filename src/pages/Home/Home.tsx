@@ -179,17 +179,17 @@ const Home = () => {
                 — From "{randomPoem.categoryTitle}"
               </p>
             </div>
-            <div className="flex gap-4 mt-8">
+            <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <button
                 onClick={generateRandomPoem}
-                className="bg-coquette-blue hover:bg-coquette-blue/90 text-white px-6 py-2 rounded-md font-semibold transition-all duration-200 shadow-sm"
+                className="bg-coquette-blue hover:bg-coquette-blue/90 text-white px-6 py-3 rounded-md font-semibold transition-all duration-200 shadow-sm w-full sm:w-auto"
               >
                 Another Surprise
               </button>
               <Link
                 to={`/category/${randomPoem.category}`}
                 onClick={closeRandomPoem}
-                className="bg-coquette-lightpink text-pink-700 border border-pink-600 hover:bg-coquette-lightpink/80 px-6 py-2 rounded-md font-semibold transition-all duration-200 shadow-sm"
+                className="bg-coquette-lightpink text-pink-700 border border-pink-600 hover:bg-coquette-lightpink/80 px-6 py-3 rounded-md font-semibold transition-all duration-200 shadow-sm w-full sm:w-auto text-center"
               >
                 More Like This
               </Link>
